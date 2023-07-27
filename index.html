@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+</head>
+<body>
+    <form>
+        <h1 style="text-align: center; color: darkgreen; font-size: xx-large;">Registration Form</h1>
+        <table border="2" align="center" cellspacing="0" cellpadding-="0"  style="width: 60%;">
+            <tr><th style="padding: 8px;" >First Name</th><td><input pattern="[A-Z a-z]+" style="margin-left:100px" size="40px" type="text" required placeholder="Enter first name"></td></tr>
+            <tr><th style="padding: 8px;">Last Name</th><td><input pattern="[A-Z a-z]+" style="margin-left:100px" size="40px" type="text" required placeholder="Enter Last name"></td></tr>
+            <tr><th style="padding: 8px;">Gender</th><td><input style="margin-left: 100px;" type="radio" required name="gen">Male<input type="radio" name="gen">Female</td></tr>
+            <tr><th style="padding: 8px;">Age</th><td><input style="margin-left:100px;" min="18" max="25" type="number" required placeholder="Enter your age"></td></tr>
+            <tr><th style="padding: 8px;">Date of Birth</th><td><input style="margin-left:100px" size="40px" required type="date"></td></tr>
+            <tr><th style="padding: 8px;">Email Address</th><td><input style="margin-left:100px" size="40px" required type="email"  placeholder="Enter your email"></td></tr>
+            <tr><th style="padding: 8px;">password</th><td><input style="margin-left:100px" size="40px" type="password" required placeholder="create strong password"></td></tr>
+            <tr><th style="padding: 8px;">Confirm password</th><td><input style="margin-left:100px" size="40px" required type="password" placeholder="Confirm password"></td></tr>
+            <tr><th style="padding: 8px;">Phone number</th><td><input style="margin-left:100px" size="40px" type="text" required pattern="[0-9]+" maxlength="10" minlength="10" placeholder="Enter your number"></td></tr>
+            <tr><th style="padding: 8px;">Address</th><td><input style="margin-left:100px" size="40px" required type="text"></td></tr>
+            
+        <tr><th style="padding: 8px;">State</th>
+                <td>
+            <select style="margin-left:100px" required>
+                <option>--Select your state--</option>
+                <option>Madhya Pradesh</option>
+                <option>Uttar Pradesh</option>
+                <option>Rajasthan</option>
+                <option>Gujrat</option>
+            </select></td>
+        </tr>
+
+            <tr><th style="padding: 8px;">Pin code</th><td><input style="margin-left:100px" required size="40px" type="text" pattern="[0-9]+" maxlength="6" minlength="6"></td></tr>
+
+            <tr>
+                <th style="padding: 8px;">Hobbeis  </th>
+                <td><input style="margin-left: 100px;" type="checkbox" name="hobby" value="music">  Music
+                <input type="checkbox" name="hobby" value="travel">  travel
+                <input type="checkbox" name="hobby" value="sport">  sports
+                <input type="checkbox" name="hobby" value="film">  movies</td>
+            </tr>
+
+            <tr>
+                <th style="padding: 8px;">Upload Photo</th>
+                <td><input style="margin-left:100px" required size="40px" type="file" multiple></td>
+            </tr>
+
+            <tr>
+               <td align="center"><input required  type="checkbox"></td> 
+               <td ><P style="margin-left: 100px;" >I here by declare that the above information provided is true and correct</P></td>
+            </tr>
+
+            <tr align="center">
+                <td></td>
+                <td><input style="margin: 8px; margin-right: 50px; padding: 10px; border-radius: 5px; background-color: chartreuse;" type="submit" value="REGISTER">
+                <input style="padding: 10px; border-radius: 5px; background-color: red;" type="reset" value="CLEAR"></td>
+
+            </tr>
+
+
+
+
+
+        </table>
+    </form>
+</body>
+</html>
